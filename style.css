@@ -8,6 +8,8 @@
   --sky: #4D96FF;
   --lavender: #C084FC;
   --peach: #FBBF77;
+  --rose: #EC4899;
+  --teal: #14B8A6;
   --cream: #FFF8F0;
   --dark: #2D3436;
   --gray: #636E72;
@@ -373,6 +375,8 @@ section {
 .color-marie { background: var(--mint); }
 .color-rosa { background: var(--lavender); }
 .color-sacagawea { background: var(--peach); }
+.color-frida { background: var(--rose); }
+.color-zelda { background: var(--teal); }
 
 .icon-ada { background: rgba(77,150,255,0.15); color: var(--sky); }
 .icon-amelia { background: rgba(255,107,107,0.15); color: var(--coral); }
@@ -380,6 +384,8 @@ section {
 .icon-marie { background: rgba(107,203,119,0.15); color: var(--mint); }
 .icon-rosa { background: rgba(192,132,252,0.15); color: var(--lavender); }
 .icon-sacagawea { background: rgba(251,191,119,0.15); color: #d48a1a; }
+.icon-frida { background: rgba(236,72,153,0.15); color: var(--rose); }
+.icon-zelda { background: rgba(20,184,166,0.15); color: var(--teal); }
 
 /* ===== ABOUT / BIO ===== */
 .about-section {
