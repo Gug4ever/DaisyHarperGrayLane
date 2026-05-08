@@ -529,6 +529,93 @@ section {
   margin-bottom: 4px;
 }
 
+/* Book cover display */
+.book-cover-section {
+  padding: 20px 0 40px;
+}
+
+.book-cover-wrapper {
+  display: flex;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+.book-cover {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow:
+    0 1px 1px rgba(0,0,0,0.15),
+    0 10px 0 -7.5px var(--white),
+    0 10px 1px -6.5px rgba(0,0,0,0.15),
+    0 20px 0 -15px var(--white),
+    0 20px 1px -14px rgba(0,0,0,0.15),
+    0 30px 30px -10px rgba(0,0,0,0.3);
+  transform: rotateY(-8deg) rotateX(2deg);
+  transition: transform 0.5s ease;
+}
+
+.book-cover:hover {
+  transform: rotateY(0) rotateX(0);
+}
+
+.book-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.book-cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.2), transparent);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.book-caption {
+  text-align: center;
+  margin-top: 24px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: var(--gray);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+  .book-cover {
+    max-width: 220px;
+    transform: none;
+  }
+}
+
+/* Cover thumb on series cards */
+.card-cover-thumb {
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  background: var(--light-gray);
+}
+
+.card-cover-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.woman-card:hover .card-cover-thumb img {
+  transform: scale(1.05);
+}
+
 /* Key facts */
 .facts-grid {
   display: grid;
