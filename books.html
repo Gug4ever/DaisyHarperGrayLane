@@ -9,6 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .card-actions { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .card-actions .card-link { margin-top: 0; }
+    .card-buy { display: inline-flex; align-items: center; gap: 5px; padding: 6px 14px; background: var(--coral); color: #fff; border-radius: 999px; font-size: 0.78rem; font-weight: 700; text-decoration: none; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .card-buy:hover { background: #e85555; transform: translateY(-1px); }
+    .card-buy-soon { display: inline-flex; align-items: center; gap: 5px; padding: 6px 14px; background: var(--light-gray); color: var(--gray); border-radius: 999px; font-size: 0.78rem; font-weight: 600; white-space: nowrap; }
+  </style>
 </head>
 <body>
 
@@ -42,7 +49,7 @@
     <div class="container">
       <div class="women-grid">
 
-        <a href="ada-lovelace.html" class="woman-card fade-in">
+        <div class="woman-card fade-in" onclick="location.href='ada-lovelace.html'" style="cursor:pointer">
           <div class="card-cover-thumb"><img src="assets/covers/ada-lovelace.png" alt="Ada Lovelace book cover"></div>
           <div class="card-color color-ada"></div>
           <div class="card-body">
@@ -50,11 +57,14 @@
             <h3>Ada Lovelace</h3>
             <div class="card-field">Mathematics &amp; Technology</div>
             <p>The world's first computer programmer saw the future of computing in the 19th century. She wrote the first algorithm for a machine, laying the groundwork for modern computers.</p>
-            <span class="card-link">Read her story &#8594;</span>
+            <div class="card-actions">
+              <span class="card-link">Read her story &#8594;</span>
+              <span class="card-buy-soon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Coming soon</span>
+            </div>
           </div>
-        </a>
+        </div>
 
-        <a href="amelia-earhart.html" class="woman-card fade-in">
+        <div class="woman-card fade-in" onclick="location.href='amelia-earhart.html'" style="cursor:pointer">
           <div class="card-cover-thumb"><img src="assets/covers/amelia-earhart.png" alt="Amelia Earhart book cover"></div>
           <div class="card-color color-amelia"></div>
           <div class="card-body">
@@ -62,11 +72,14 @@
             <h3>Amelia Earhart</h3>
             <div class="card-field">Aviation &amp; Exploration</div>
             <p>A pioneering aviator who became the first woman to fly solo across the Atlantic. She broke aviation records and paved the way for future women in aviation.</p>
-            <span class="card-link">Read her story &#8594;</span>
+            <div class="card-actions">
+              <span class="card-link">Read her story &#8594;</span>
+              <span class="card-buy-soon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Coming soon</span>
+            </div>
           </div>
-        </a>
+        </div>
 
-        <a href="cleopatra.html" class="woman-card fade-in">
+        <div class="woman-card fade-in" onclick="location.href='cleopatra.html'" style="cursor:pointer">
           <div class="card-cover-thumb"><img src="assets/covers/cleopatra.png" alt="Cleopatra book cover"></div>
           <div class="card-color color-cleopatra"></div>
           <div class="card-body">
@@ -74,11 +87,14 @@
             <h3>Cleopatra</h3>
             <div class="card-field">Leadership &amp; Diplomacy</div>
             <p>The last queen of Egypt, renowned for her intelligence and political alliances. Her strategic leadership protected Egypt's independence and made her one of history's most influential women.</p>
-            <span class="card-link">Read her story &#8594;</span>
+            <div class="card-actions">
+              <span class="card-link">Read her story &#8594;</span>
+              <a href="https://shop.ingramspark.com/b/084?params=iYpCa0giEfOv5NQnMzSvBGp06gUhhVVDBrapfSlisGR" class="card-buy" target="_blank" rel="noopener" onclick="event.stopPropagation()"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Buy</a>
+            </div>
           </div>
-        </a>
+        </div>
 
-        <a href="marie-curie.html" class="woman-card fade-in">
+        <div class="woman-card fade-in" onclick="location.href='marie-curie.html'" style="cursor:pointer">
           <div class="card-cover-thumb"><img src="assets/covers/marie-curie.png" alt="Marie Curie book cover"></div>
           <div class="card-color color-marie"></div>
           <div class="card-body">
@@ -86,11 +102,14 @@
             <h3>Marie Curie</h3>
             <div class="card-field">Physics &amp; Chemistry</div>
             <p>A groundbreaking scientist who made pivotal discoveries in radiation and radium. She became the first woman to win a Nobel Prize and the first to win two in different sciences.</p>
-            <span class="card-link">Read her story &#8594;</span>
+            <div class="card-actions">
+              <span class="card-link">Read her story &#8594;</span>
+              <a href="https://shop.ingramspark.com/b/084?params=TbLeVsWd64GmqGkGvm5bgBJlTbf87RkeKjNBkBFmB8q" class="card-buy" target="_blank" rel="noopener" onclick="event.stopPropagation()"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Buy</a>
+            </div>
           </div>
-        </a>
+        </div>
 
-        <a href="rosa-parks.html" class="woman-card fade-in">
+        <div class="woman-card fade-in" onclick="location.href='rosa-parks.html'" style="cursor:pointer">
           <div class="card-cover-thumb"><img src="assets/covers/rosa-parks.png" alt="Rosa Parks book cover"></div>
           <div class="card-color color-rosa"></div>
           <div class="card-body">
@@ -98,11 +117,14 @@
             <h3>Rosa Parks</h3>
             <div class="card-field">Civil Rights</div>
             <p>Her courageous decision to refuse giving up her seat on a segregated bus in 1955 sparked the Montgomery Bus Boycott and became a pivotal moment in the Civil Rights Movement.</p>
-            <span class="card-link">Read her story &#8594;</span>
+            <div class="card-actions">
+              <span class="card-link">Read her story &#8594;</span>
+              <a href="https://shop.ingramspark.com/b/084?params=jiOEXz9cOBUoLqmDUFrWp1QVTXXnKuQ5HdiBFWy8hEL" class="card-buy" target="_blank" rel="noopener" onclick="event.stopPropagation()"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Buy</a>
+            </div>
           </div>
-        </a>
+        </div>
 
-        <a href="sacagawea.html" class="woman-card fade-in">
+        <div class="woman-card fade-in" onclick="location.href='sacagawea.html'" style="cursor:pointer">
           <div class="card-cover-thumb"><img src="assets/covers/sacagawea.png" alt="Sacagawea book cover"></div>
           <div class="card-color color-sacagawea"></div>
           <div class="card-body">
@@ -110,11 +132,14 @@
             <h3>Sacagawea</h3>
             <div class="card-field">Exploration &amp; Leadership</div>
             <p>A Native American woman who played a vital role in guiding the Lewis and Clark Expedition. As an interpreter and diplomat, she helped navigate the American frontier.</p>
-            <span class="card-link">Read her story &#8594;</span>
+            <div class="card-actions">
+              <span class="card-link">Read her story &#8594;</span>
+              <a href="https://shop.ingramspark.com/b/084?params=SwrR5ikHtRGpwGpZ2elZeXfQIagsYyP56oIlr5gbc9v" class="card-buy" target="_blank" rel="noopener" onclick="event.stopPropagation()"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Buy</a>
+            </div>
           </div>
-        </a>
+        </div>
 
-        <a href="frida-kahlo.html" class="woman-card fade-in">
+        <div class="woman-card fade-in" onclick="location.href='frida-kahlo.html'" style="cursor:pointer">
           <div class="card-cover-thumb"><img src="assets/covers/frida-kahlo.png" alt="Frida Kahlo book cover"></div>
           <div class="card-color color-frida"></div>
           <div class="card-body">
@@ -122,11 +147,14 @@
             <h3>Frida Kahlo</h3>
             <div class="card-field">Art &amp; Resilience</div>
             <p>The Mexican painter who created some of the most striking self-portraits in history. She turned a lifetime of pain into vibrant, unforgettable art and became a global symbol of courage.</p>
-            <span class="card-link">Read her story &#8594;</span>
+            <div class="card-actions">
+              <span class="card-link">Read her story &#8594;</span>
+              <a href="https://shop.ingramspark.com/b/084?params=kmapzVzRz85uni5zyYzQfPBErgcbz7668uoPrTWILAX" class="card-buy" target="_blank" rel="noopener" onclick="event.stopPropagation()"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Buy</a>
+            </div>
           </div>
-        </a>
+        </div>
 
-        <a href="zelda-fitzgerald.html" class="woman-card fade-in">
+        <div class="woman-card fade-in" onclick="location.href='zelda-fitzgerald.html'" style="cursor:pointer">
           <div class="card-cover-thumb"><img src="assets/covers/zelda-fitzgerald.png" alt="Zelda Fitzgerald book cover"></div>
           <div class="card-color color-zelda"></div>
           <div class="card-body">
@@ -134,9 +162,12 @@
             <h3>Zelda Fitzgerald</h3>
             <div class="card-field">Literature &amp; the Arts</div>
             <p>The original American flapper and Jazz Age icon. A writer, dancer, and painter, she refused to be defined as just a wife or muse, leaving behind her own novel and a body of vivid artwork.</p>
-            <span class="card-link">Read her story &#8594;</span>
+            <div class="card-actions">
+              <span class="card-link">Read her story &#8594;</span>
+              <a href="https://shop.ingramspark.com/b/084?params=N9TXbCcHNXxkQUzGgshOqltvY1Jc9tf8S9xMDdDWSC1" class="card-buy" target="_blank" rel="noopener" onclick="event.stopPropagation()"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Buy</a>
+            </div>
           </div>
-        </a>
+        </div>
 
       </div>
     </div>
