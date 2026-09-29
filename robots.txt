@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daisy-harper-gray-lane.vercel.app/sitemap.xml
